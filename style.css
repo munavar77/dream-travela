@@ -1,0 +1,274 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  width: 100%;
+  min-height: 100vh;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background: url('1.jpg') no-repeat center center/cover;
+  position: relative;
+  padding-top: 20px;
+}
+
+.container {
+  width: 90%;
+  height: 60px;
+  background: rgba(180, 203, 201, 0.8);
+  margin: 0 auto;
+  padding: 0 30px;
+  border-radius: 30px;
+  border: 1px solid #30256497;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.nav-list {
+  display: none;
+}
+
+.nav-list li {
+  display: inline-block;
+  margin-right: 25px;
+  font-size: 15px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.menu-icon {
+  font-size: 24px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.hero-section .content_wrapper {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  text-align: center;
+  color: rgb(152, 49, 49);
+  padding: 0 20px;
+}
+
+.content_wrapper h1 {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.content_wrapper p {
+  font-size: 25px;
+  font-weight: 500;
+  color: #343231;
+}
+
+form {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 30px;
+  justify-content: center;
+  background: linear-gradient(to right, rgb(0, 255, 179), rgb(12, 0, 73));
+}
+
+.search-item {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.search-item div {
+  color: white;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+  margin-bottom: 10px;
+}
+
+.search-item input {
+  height: 30px;
+  padding: 0 15px;
+  border: none;
+  outline: none;
+  width: 200px;
+  color: #333;
+}
+
+.search_btn {
+  height: 40px;
+  padding: 0 30px;
+  border-radius: 30px;
+  border: none;
+  outline: none;
+  background: rgb(82, 87, 153);
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 600;
+  margin-top: 30px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.search_btn:hover {
+  background: hsl(259, 27%, 18%);
+}
+
+.services {
+  padding: 100px 20px;
+  background: #53af92;
+  text-align: center;
+}
+
+.services h5 {
+  font-size: 14px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.services h1 {
+  font-size: 45px;
+  font-weight: 600;
+  margin-bottom: 30px;
+  color: #fff;
+}
+
+.services .row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.services .col {
+  background: linear-gradient(to top, #a3baaa, #3daf65);
+  padding: 40px 20px;
+  text-align: center;
+  border-radius: 10px;
+}
+
+.services .col img {
+  max-width: 100%;
+  height: auto;
+}
+
+.services .col h2 {
+  font-size: 20px;
+  margin: 20px 0;
+  font-weight: 700;
+}
+
+.services .col p {
+  font-size: 14px;
+  color: #392e90;
+}
+
+@media (min-width: 768px) {
+  .nav-list {
+    display: inline-block;
+  }
+
+  .menu-icon {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .content_wrapper h1 {
+    font-size: 20px;
+  }
+
+  .search-item input {
+    width: 100%;
+  }
+
+  form {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+ .destination{
+  background: rgb(159, 189, 179);
+}
+.destination-card{
+ background:#5f6f88;
+ margin: 30px 10px;
+ padding-bottom: 30px;
+ border: 1px solid#28343f;
+
+}
+
+.destination-card img{
+ width: 100%;
+ height: 300px;
+}
+
+.destination-card h2 {
+ margin:20px 10px 0;
+}
+
+.destination-card p{
+ margin:10px 10px 20px;}
+
+.destination-card a {
+ margin:10px 10px 20px;
+ text-decoration: none;
+ background-color: rgb(15, 16, 16);
+ color: #d8c3c3;
+ padding: 6px 20px;
+ font-weight: 600;
+}
+footer{
+  width: 100%;
+  padding: 15px 0;
+  background-color: #3daf65;
+}
+footer p{
+  text-align:center;
+  color: (240, 57%, 88%);
+}
+
+@media only screen and (min-width: 768px) {
+ .nav-list{
+ display: block;
+ }
+.menu-icon{
+  display: none;
+}
+.hero-section .content_wrapper{
+    top: 30%;
+}
+
+.content_wrapper h1{
+  font-size: 55px;
+}
+
+.content_wrapper p{
+  font-size: 25px;
+  margin:10px 0;
+}
+form{
+
+  justify-content: center;
+}
+form.search-item input{
+  height: 40px;
+}
